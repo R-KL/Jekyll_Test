@@ -25,7 +25,14 @@ plugins:
 
 exclude:
   - node_modules
+  - vendor
+  - vendor/bundle
+  - vendor/cache
+  - .bundle
+  - .jekyll-cache
+  - .sass-cache
   - scripts
   - README.md
   - LICENSE
+  - Gemfile
   - Gemfile.lock
