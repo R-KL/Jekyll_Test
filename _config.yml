@@ -1,0 +1,31 @@
+title: R-KL Repository Studio
+description: Curated hub for Richard K Lijur-KL's public GitHub work.
+url: https://r-kl.github.io
+baseurl: "/Jekyll_Test"
+permalink: pretty
+markdown: kramdown
+future: true
+timezone: Asia/Kolkata
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+collections:
+  repos:
+    output: true
+    permalink: /repos/:name/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - node_modules
+  - scripts
+  - README.md
+  - LICENSE
+  - Gemfile.lock

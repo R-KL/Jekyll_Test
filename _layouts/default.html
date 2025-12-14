@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="site">
+    <div class="site__background" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <nav class="site-header__nav">
+          <a href="https://github.com/R-KL" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/R-KL?tab=repositories" target="_blank" rel="noreferrer">Repositories</a>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <p>© {{ "now" | date: "%Y" }} R-KL. Built with Jekyll.</p>
+    </footer>
+  </body>
+</html>

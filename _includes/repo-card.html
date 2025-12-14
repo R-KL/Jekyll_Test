@@ -1,0 +1,35 @@
+<article class="repo-card">
+  <header class="repo-card__header">
+    <span class="repo-card__status">{{ repo.status }}</span>
+    <h3><a href="{{ repo.repo_url }}" target="_blank" rel="noreferrer">{{ repo.name }}</a></h3>
+  </header>
+  <p class="repo-card__summary">{{ repo.description | default: "No description provided." }}</p>
+  <dl class="repo-card__stats">
+    <div>
+      <dt>Language</dt>
+      <dd>{{ repo.language | default: "Mixed" }}</dd>
+    </div>
+    <div>
+      <dt>Stars</dt>
+      <dd>{{ repo.stars }}</dd>
+    </div>
+    <div>
+      <dt>Forks</dt>
+      <dd>{{ repo.forks }}</dd>
+    </div>
+  </dl>
+  <ul class="repo-card__tags">
+    {% for topic in repo.topics %}
+      <li>{{ topic }}</li>
+    {% endfor %}
+    {% if repo.is_fork %}
+      <li>fork</li>
+    {% endif %}
+  </ul>
+  <footer class="repo-card__footer">
+    <span>Updated {{ repo.updated }}</span>
+    {% if repo.homepage %}
+      <a href="{{ repo.homepage }}" target="_blank" rel="noreferrer">Live demo ↗</a>
+    {% endif %}
+  </footer>
+</article>

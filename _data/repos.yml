@@ -1,0 +1,54 @@
+- name: ace-WebUI
+  description: "Ace editor packaged as a Rust-backed web UI shell."
+  language: JavaScript
+  stars: 1
+  forks: 0
+  homepage: https://r-kl.github.io/ace-WebUI/
+  repo_url: https://github.com/R-KL/ace-WebUI
+  updated: 2025-12-10
+  topics:
+    - rust
+    - webui
+    - editor
+  status: Active research
+
+- name: Jekyll_Test
+  description: "This very site, experimenting with GitHub Pages-driven repo showcases."
+  language: Ruby
+  stars: 0
+  forks: 0
+  homepage: https://github.com/R-KL/Jekyll_Test
+  repo_url: https://github.com/R-KL/Jekyll_Test
+  updated: 2025-11-25
+  topics:
+    - jekyll
+    - showcase
+  status: Sandbox
+
+- name: lunasea
+  description: "Fork of the Flutter self-hosted automation controller for personal tweaks."
+  language: Dart
+  stars: 0
+  forks: 0
+  homepage: https://www.lunasea.app
+  repo_url: https://github.com/R-KL/lunasea
+  updated: 2025-04-03
+  topics:
+    - flutter
+    - automation
+  status: Maintenance
+  is_fork: true
+
+- name: shaji-ookal
+  description: "Template fork used for experimenting with HTML-first layouts."
+  language: HTML
+  stars: 0
+  forks: 0
+  homepage: https://r-kl.github.io/shaji-ookal/
+  repo_url: https://github.com/R-KL/shaji-ookal
+  updated: 2025-12-11
+  topics:
+    - html
+    - template
+  status: UI playground
+  is_fork: true
